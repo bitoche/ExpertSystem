@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ЭС ГИТАРЫ</title>
+    <title>ЭС ПОДБОР АВТОМОБИЛЯ</title>
     <style>
         .ansbutton{
             border-style: solid;
@@ -25,8 +25,9 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
-            width: 50%;
-            grid-column: 2;
+            width: 66%;
+            grid-column-start: 1;
+            grid-column-end: 4;
             grid-row: 3;
             margin: 0 auto;
         }
@@ -80,8 +81,13 @@
     <#if currDialog.isEnd()==false>
         <#if currDialogAnswers??>
             <div class="button-container" >
-                <#list currDialogAnswers as cda>
-                    <a class="ansbutton" href="/ans/${cda.currDialog.id}/${cda.nextDialog.id}">${cda.title}</a>
+                <#assign ctr=0>
+                <#list currDialogAnswers?sort_by("id")?reverse as cda>
+                    <#assign ctr=ctr+1>
+                    <label style="display: flex; flex-direction: column; align-items: center">
+                        ${ctr}
+                        <a class="ansbutton" href="/ans/${cda.currDialog.id}/${cda.nextDialog.id}">${cda.title}</a>
+                    </label>
                 </#list>
             </div>
         </#if>

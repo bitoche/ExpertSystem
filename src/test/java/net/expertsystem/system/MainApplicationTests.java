@@ -1,10 +1,10 @@
-package net.expertsystem.guitars;
+package net.expertsystem.system;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GuitarsApplicationTests {
+class MainApplicationTests {
 
     @Test
     void contextLoads() {

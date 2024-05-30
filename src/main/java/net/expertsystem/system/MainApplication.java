@@ -1,12 +1,12 @@
-package net.expertsystem.guitars;
+package net.expertsystem.system;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
-public class GuitarsApplication {
+public class MainApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GuitarsApplication.class, args);
+        SpringApplication.run(MainApplication.class, args);
     }
 
 }

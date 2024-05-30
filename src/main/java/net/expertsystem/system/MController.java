@@ -1,9 +1,8 @@
-package net.expertsystem.guitars;
+package net.expertsystem.system;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import net.expertsystem.guitars.models.__Answer;
-import net.expertsystem.guitars.models.__Dialog;
+import net.expertsystem.system.models.__Answer;
+import net.expertsystem.system.models.__Dialog;
 import org.springframework.lang.Nullable;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

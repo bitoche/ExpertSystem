@@ -1,14 +1,12 @@
-package net.expertsystem.guitars;
+package net.expertsystem.system;
 
 import lombok.AllArgsConstructor;
-import net.expertsystem.guitars.models.__Answer;
-import net.expertsystem.guitars.models.__Dialog;
-import net.expertsystem.guitars.repository.ARepository;
-import net.expertsystem.guitars.repository.DRepository;
-import org.springframework.lang.Nullable;
+import net.expertsystem.system.models.__Answer;
+import net.expertsystem.system.models.__Dialog;
+import net.expertsystem.system.repository.ARepository;
+import net.expertsystem.system.repository.DRepository;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
